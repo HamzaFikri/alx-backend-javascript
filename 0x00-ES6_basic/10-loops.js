@@ -4,11 +4,12 @@
  * Rewrite the function 
 */
 
-export default function appendToEachArrayValue(array, appendString) {
-  const newArray = [];
-  for (const idx of array) {
-    newArray.push(appendString + idx);
-  }
+const appendToEachArrayValue = (array, appendString) => {
+  const resoult = [];
 
-  return newArray;
-}
+  for (const value of array) resoult.push(appendString + value);
+
+  return resoult;
+};
+
+export default appendToEachArrayValue;
